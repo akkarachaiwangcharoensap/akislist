@@ -1,0 +1,93 @@
+$default-text-color: #4c4c4c;
+
+$green: #2aa140;
+$blue: #5588ff;
+$red: #fe4e47;
+$orange: #ff9a4d;
+$purple: #8d175e;
+
+.link {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.button {
+
+	padding: 12px 36px;
+	border: 2px solid black;
+	border-radius: 6px;
+
+	background: transparent;
+
+	color: $default-text-color;
+	border-color: $default-text-color;
+	
+	display: inline-block;
+
+	transition: all 0.4s;
+
+	&:hover {
+		color: $default-text-color;
+
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	&.small {
+		padding: 6px 18px;
+	}
+
+	&.green {
+		color: $green !important;
+		border-color: $green;
+
+		&:hover {
+			color: white !important;
+			background: $green;
+		}
+	}
+
+	&.blue {
+		color: $blue !important;
+		border-color: $blue;
+
+		&:hover {
+			color: white !important;
+			background: $blue;
+		}
+	}
+
+	&.red {
+		color: $red !important;
+		border-color: $red;
+
+		&:hover {
+			color: white !important;
+			background: $red;
+		}
+	}
+
+	&.orange {
+		color: $orange !important;
+		border-color: $orange;
+
+		&:hover {
+			color: white !important;
+			background: $orange;
+		}
+	}
+
+	&.purple {
+		color: $purple !important;
+		border-color: $purple;
+
+		&:hover {
+			color: white !important;
+			background: $purple;
+		}
+	}
+}
+

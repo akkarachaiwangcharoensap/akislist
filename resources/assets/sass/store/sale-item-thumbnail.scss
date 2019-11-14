@@ -1,0 +1,114 @@
+.sale-items {
+
+	.sale-item {
+
+		margin: 12px 0;
+		padding: 12px 18px;
+
+		border: 2px solid #efefef;
+		border-radius: 6px;
+
+		overflow: hidden;
+
+		.metadata {
+			width: 100%;
+
+			display: inline-block;
+
+			.date {
+				font-size: 14px;
+				float: left;			
+			}
+
+			.price {
+				font-size: 14px;
+				float: right;
+			}
+		}
+
+		.description {
+
+			margin: 6px 0;
+
+			.action {
+
+				width: 20%;
+				margin: 6px 0;
+				float: right;
+
+				a {
+					margin: 2px 0;
+					float: right;
+				}
+			}
+
+			p {
+				width: 80%;
+
+				min-height: 88px;
+
+				margin: 0;
+
+				padding-right: 6px;
+				padding-top: 12px;
+
+				font-size: 16px;
+				display: inline-block;
+			}
+		}
+
+		.category {
+
+			margin: 6px 0;
+			display: inline-block;
+
+			p, a {
+				
+				margin: 0;
+				padding: 6px 12px;
+				
+				font-size: 16px;
+				border-radius: 6px;
+			
+				color: white;
+				text-decoration: none;
+
+				transition: all 0.4s;
+				
+				background: #eb6e6e;
+
+				&:hover {
+					background: #cf6060;
+				}
+			}
+		}
+
+		.location {
+
+			margin: 6px 0;
+			display: inline-block;
+
+			button {
+				margin: 0;
+				padding: 6px 12px;
+				
+				font-size: 16px;
+				border-radius: 6px;
+			
+				color: white;
+				text-decoration: none;
+
+				transition: all 0.4s;
+				
+				background: #76b25d;
+
+				border: none;
+				cursor: pointer;
+				
+				&:hover {
+					background: #6a9f53;
+				}
+			}
+		}
+	}
+}

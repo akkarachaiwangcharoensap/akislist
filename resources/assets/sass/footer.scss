@@ -1,0 +1,69 @@
+$default-text-color: #4c4c4c;
+
+.footer {
+	padding: 48px;
+	padding-bottom: 0;
+	background: #efefef;
+
+	h4 {
+		color: $default-text-color;
+	}
+
+	ul {
+
+		margin: 0;
+		padding: 0;
+
+		li {
+			
+			list-style: none;
+
+			a {
+				color: $default-text-color;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.bottom {
+
+		margin-top: 124px;
+		
+		p {
+			padding: 18px 0;
+			margin: 0 auto;
+
+			width: 350px;
+		
+			color: $default-text-color;
+
+			text-align: center;
+			clear: both;
+			display: block;
+		}
+	}
+
+	.col-lg-3.col-lg-3.col-sm-3 {
+		margin-bottom: 36px;
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	.footer {
+		
+		padding: 24px 48px;
+
+		.row {
+			.pages, .follow, .legal, .contact-us {
+				margin: 24px 0;
+			}
+		}
+
+		.bottom {
+			margin-top: 36px;
+		}
+	}
+}

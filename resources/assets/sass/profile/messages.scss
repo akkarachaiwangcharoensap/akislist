@@ -1,0 +1,337 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+$default-text-color: #4c4c4c;
+
+.section {
+
+	z-index: 0;
+	transition: all 0.6s;
+
+	&.messages {
+		margin-top: 44px;
+		padding: 0 86px;
+
+		.content {
+			margin-top: 12px;
+			margin-bottom: 64px;
+
+			border-radius: 6px;
+
+			h4 {
+				padding: 24px;
+				margin: 0;
+			}
+
+			.item {
+
+				padding: 24px;
+				margin: 24px 0;
+
+				width: 100%;
+				display: inline-block;
+
+				background: #f3f3f3;
+
+				
+				&.owner {
+
+					padding: 24px;
+					border-radius: 6px;
+
+					background: #a3ccff;
+
+					.sale-item {
+						border-color: #ff9085;
+					}
+
+					.user-messages {
+						border-color: #ff9085;
+					}
+				}
+
+				.sale-item {
+					width: 40%;
+
+					margin: 0;
+					margin-right: 4%;
+
+					padding: 12px 18px;
+
+					border: 2px solid #efefef;
+					border-radius: 6px;
+
+					background: white;
+
+					overflow: hidden;
+
+					display: inline-block;
+					float: left;
+
+					.metadata {
+						
+						width: 100%;
+						display: inline-block;
+
+						.date {
+							font-size: 14px;
+							float: left;			
+						}
+
+						.price {
+							font-size: 14px;
+							float: right;
+						}
+					}
+
+					.description {
+
+						margin: 6px 0;
+
+						p {
+							width: 80%;
+							min-height: 86px;
+
+							margin: 0;
+							padding-top: 12px;
+			
+							font-size: 16px;
+							display: inline-block;
+						}
+
+						.action {
+
+							width: 20%;
+							margin: 6px 0;
+							
+							float: right;
+
+							form {
+								width: 100%;
+								
+								input {
+									float: right;
+								}
+							}
+
+							a, form {
+								margin-top: 6px;
+								float: right;
+							}
+						}
+					}
+
+					.category {
+
+						margin: 6px 0;
+						
+						display: inline-block;
+
+						p, a {
+							
+							margin: 0;
+							padding: 6px 12px;
+							
+							font-size: 16px;
+							border-radius: 6px;
+						
+							color: white;
+							text-decoration: none;
+
+							transition: all 0.4s;
+							
+							background: #eb6e6e;
+
+							&:hover {
+								background: #cf6060;
+							}
+						}
+					}
+
+					.location {
+
+						margin: 6px 0;
+						display: inline-block;
+
+						button {
+							margin: 0;
+							padding: 6px 12px;
+							
+							font-size: 16px;
+							border-radius: 6px;
+						
+							color: white;
+							text-decoration: none;
+
+							transition: all 0.4s;
+							
+							background: #76b25d;
+
+							border: none;
+							cursor: pointer;
+							
+							&:hover {
+								background: #6a9f53;
+							}
+						}
+					}
+				}
+			}
+
+			.user-messages {
+				width: 56%;
+
+				padding: 0px 24px;
+
+				border: 2px solid #efefef;
+				border-radius: 6px;
+
+				display: inline-block;
+
+				background: white;
+
+				.user-message {
+
+					margin: 36px 0;
+
+					height: 48px;
+					overflow: hidden;
+
+					transition: all 0.4s;
+
+					&.active {
+						height: 462px;
+						overflow: scroll;
+					}
+					
+					.sender {
+
+						padding: 12px 24px;
+						border-radius: 24px;
+
+						color: white;
+						background: #df5e57;
+
+						transition: all 0.4s;
+
+						&:hover {
+							background: #d2544d;
+							cursor: pointer;
+						}
+						
+						.name {
+
+						}
+
+						.total {
+
+						}
+					}
+
+					.messages {
+						margin: 12px 0;
+
+						.message {
+
+							padding: 6px;
+							position: relative;
+
+							b {
+								color: $default-text-color;
+							}
+
+							p {
+								color: $default-text-color;
+								margin: 0;
+							}
+
+							.you {
+								color: #3a7ffd;
+							}
+
+							.remove-message-form {
+								top: 30px;
+								right: 12px;
+
+								position: absolute;
+								
+								button {
+
+									font-size: 16px;
+									border: 0;
+
+									background: white;
+									color: #ff6565;
+								}
+							}
+						}
+					}
+
+					.reply {
+						
+						padding: 6px;
+
+						form {
+
+							min-height: 242px;
+
+							b {
+								width: 100%;
+
+								font-size: 18px;
+								margin: 12px 0;
+
+								display: block;
+							}
+
+							textarea {
+								padding: 12px 24px;
+								height: 150px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.section {
+		&.messages {
+			padding: 0 64px;
+		}
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	.section {
+		&.messages {
+			padding: 0 24px;
+			
+			.content {
+				.item {
+					.sale-item {
+						width: 100%;
+					}
+
+					.user-messages {
+						width: 100%;
+
+						margin-top: 24px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.section {
+		&.messages {
+			padding: 0 6px;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,104 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+$default-text-color: #4c4c4c;
+
+$blue: #5588ff;
+$red: #fe4e47;
+
+.section {
+
+	z-index: 0;
+	transition: all 0.6s;
+
+	&.reported-users-details {
+	
+		margin-top: 44px;
+		margin-bottom: 44px;
+		
+		padding: 0 86px;
+
+		h1 {
+			margin-bottom: 24px;
+		}
+
+		.users-list {
+			padding: 24px;
+
+			border: 2px solid #efefef;
+			border-radius: 6px;
+
+			h4 {
+				margin-bottom: 18px;
+			}
+
+			.user {
+
+				width: 100%;
+				padding: 24px 0;
+
+				border-top: 1px solid #efefef;
+				border-bottom: 1px solid #efefef;
+
+				display: block;
+
+				.info {
+
+					width: 78%;
+
+					display: inline-block;
+
+					.name {
+						font-size: 24px;
+						font-weight: bold;
+						margin-bottom: 6px;
+
+						color: $blue;
+					}
+
+					.reason {
+
+						b {
+							color: $default-text-color;
+						}
+
+						p {
+							font-size: 16px;
+							color: $red;
+						}
+					}
+
+					.description {
+
+						b {
+							color: $default-text-color;
+						}
+
+						p {
+							font-size: 16px;
+							color: $default-text-color;
+						}
+					}
+				}
+
+				.action {
+					width: 20%;
+
+					float: right;
+					text-align: right;
+					display: inline-block;
+
+					.button {
+						margin: 2px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

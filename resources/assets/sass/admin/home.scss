@@ -1,0 +1,100 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+$default-text-color: #4c4c4c;
+$blue: #5588ff;
+$red: #fe4e47;
+
+.section {
+
+	z-index: 0;
+	transition: all 0.6s;
+
+	&.dashboard {
+	
+		margin-top: 44px;
+		margin-bottom: 44px;
+		
+		padding: 0 86px;
+
+		h1 {
+			margin-bottom: 24px;
+		}
+
+		.positive {
+			color: $blue;
+		}
+
+		.negative {
+			color: $red;
+		}
+
+		.monthly-statistics {
+			padding: 24px;
+
+			border: 2px solid #efefef;
+			border-radius: 6px;
+
+			h4 {
+				margin-bottom: 18px;
+			}
+		}
+
+		.daily-statistics {
+			margin-top: 24px;
+			padding: 24px;
+
+			border: 2px solid #efefef;
+			border-radius: 6px;
+
+			h4 {
+				margin-bottom: 18px;
+			}
+		}
+	}
+
+	&.account-settings {
+
+		margin-top: 8px;
+		margin-bottom: 64px;
+		
+		padding: 0 86px;
+
+		.content {
+			margin-top: 24px;
+			padding: 32px;
+
+			border: 2px solid #efefef;
+			border-radius: 6px;
+
+			ul {
+				padding: 0;
+				margin: 0;
+
+				li {
+					list-style: none;
+				}
+			}
+
+			h3 {
+				margin-bottom: 12px;
+
+				small {
+					margin: 0 6px;
+					font-size: 1rem;
+				}
+			}
+
+			.account-deactivation-form {
+				height: 12px;
+				margin: 18px 0;	
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

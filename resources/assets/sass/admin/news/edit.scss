@@ -1,0 +1,73 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$default-text-color: #4c4c4c;
+
+.section {
+
+	z-index: 0;
+	transition: all 0.6s;
+
+	&.post {
+	
+		margin-top: 44px;
+		margin-bottom: 44px;
+		
+		padding: 0 86px;
+
+		.content {
+			
+			padding: 24px;
+			padding-bottom: 82px;
+
+			margin: 24px 0;
+			margin-bottom: 86px;
+
+			min-height: 794px;
+
+			border: 2px solid #efefef;
+			border-radius: 6px;
+
+			input[type="text"] {
+				padding: 12px 18px;
+			}
+
+			textarea {
+				display: none;
+				padding: 12px 18px;
+			}
+
+			label {
+				margin-bottom: 12px;
+				font-size: 24px;
+			}
+
+			.title, .content {
+				margin: 12px 0;
+			}
+		}
+
+		.action {
+			input[type="submit"] {
+				margin-top: 22px;
+			}
+		}
+	}
+}
+
+#tinymce.tinymce-editor {
+	font-family: 'Open Sans', sans-serif !important;
+	padding: 0px 12px !important;
+
+	font-size: 18px;
+	color: $default-text-color;
+
+	p {
+		font-weight: 400;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,54 @@
+$default-text-color: #4c4c4c;
+
+.section {
+
+	&.news {
+		.content {
+
+			margin: 36px 24px;
+
+			h1 {
+				font-weight: bold;
+				color: $default-text-color;
+			}
+
+			p {
+				font-size: 20px;
+				color: $default-text-color;
+			}
+
+			.posts {
+				margin: 24px;
+
+				.post {
+					margin: 12px 0;
+
+					min-height: 450px;
+
+					padding: 24px;
+					padding-bottom: 36px;
+
+					border: 2px solid #efefef;
+					border-radius: 6px;
+
+					position: relative;
+
+					.date {
+						bottom: 16px;
+						right: 24px;
+
+						position: absolute;
+
+						color: #888888;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

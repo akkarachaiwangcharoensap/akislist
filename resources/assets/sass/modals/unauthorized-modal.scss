@@ -1,0 +1,53 @@
+$green: #2aa140;
+$blue: #5588ff;
+$red: #fe4e47;
+
+#unauthorized-modal {
+	.modal-dialog {
+		max-width: 800px;
+
+		.modal-content {
+			
+			padding: 24px 36px;
+
+			hr {
+				width: 100%;
+				border-top: 2px solid #efefef;
+			}
+
+			.modal-header {
+				
+				border: 0;
+				padding: 0;
+
+				h1 {
+					font-size: 2.8rem;
+					
+					color: black;
+				}
+
+				button {
+					span {
+						color: black;
+					}
+				}
+			}
+
+			.modal-body {
+				border: 0;
+				padding: 0;
+
+				margin-bottom: 18px;
+
+				h2 {
+					font-size: 1rem;
+				}
+			}
+
+			.modal-footer {
+				padding: 0;
+				border: 0;
+			}
+		}
+	}
+}

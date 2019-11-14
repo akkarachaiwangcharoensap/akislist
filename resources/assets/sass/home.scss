@@ -1,0 +1,358 @@
+$default-text-color: #4c4c4c;
+
+$green: #2aa140;
+$blue: #5588ff;
+$red: #fe4e47;
+
+// Override bootstrap alert
+.alert {
+	margin: 0;
+	z-index: 2;
+
+	border-radius: 0;
+
+	p {
+		margin: 0
+	}
+}
+
+.section {
+
+	&.header {
+		background: #efefef;
+
+		.content {
+			margin: 124px auto;
+			width: 1200px;
+
+			.feature-text {
+				padding: 0 24px;
+				width: 500px;
+
+				h1 {
+					font-size: 3.0rem;
+				}
+			}
+		}
+	}
+
+	&.about {
+		background: white;
+
+		.content {
+			width: 1200px;
+			margin: 142px auto;
+
+			p {
+				margin: 0;
+				padding: 24px 0;
+				
+				color: $default-text-color;
+			}
+
+			h1 {
+				font-size: 3.0rem;
+				text-align: center;
+				
+				color: $default-text-color;
+			}
+		}
+	}
+
+	&.feature {
+
+		position: relative;
+		background: #efefef;
+
+		.content {
+			width: 1200px;
+			height: 400px;
+
+			padding: 0 60px;
+			margin: 52px auto;
+				
+			.features {
+
+				width: 960px;
+				height: 250px;
+
+				margin: 0 auto;
+
+				.buyer, .seller {
+					width: 345px;
+					border: 2px solid #d2d2d2;
+					border-radius: 6px;
+
+					padding: 26px;
+					background: white;
+
+					hr {
+						border-top: 2px solid #efefef;
+					}
+				}
+
+				.or {
+					margin: 110px;
+					font-size: 3.0rem;
+				}
+
+				.buyer, .seller, .or {
+					display: inline-block;
+					float: left;
+				}
+			}
+
+			h2 {
+				font-weight: bold;
+				color: $default-text-color;
+			}
+
+			h1 {
+				font-size: 3.0rem;
+				text-align: center;
+				color: $default-text-color;
+			}
+		}
+	}
+
+	&.contact {
+		background: white;
+
+		.content {
+			width: 1200px;
+			margin: 142px auto;
+
+			p {
+				margin: 0;
+				padding: 24px 0;
+				color: $default-text-color;
+			}
+
+			h1 {
+				font-size: 3.0rem;
+				text-align: center;
+				color: $default-text-color;
+			}
+		}
+	}
+
+	.content {
+
+		h1 {
+			font-weight: bold;
+			color: $default-text-color;
+		}
+
+		p {
+			font-size: 20px;
+			color: $default-text-color;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .section {
+
+	    &.header, &.about, &.feature, &.contact {
+	    	.content {
+	    		width: 900px;
+	    	}
+	    }
+
+	    &.header {}
+	    &.about {}
+
+	    &.feature {
+
+	    	.content {
+		    	.features {
+		    		width: 780px;
+
+		    		.or {
+		    			margin: 94px 64px;
+		    		}
+
+		    		.buyer, .seller {
+		    			width: 300px;
+		    		}
+		    	}
+	    	}
+	    }
+
+	    &.contact {}
+	}
+}
+
+@media only screen and (max-width: 968px) {
+    .section {
+
+	    &.header, &.about, &.feature, &.contact {
+	    	.content {
+	    		width: 738px;
+	    	}
+	    }
+
+	    &.header {}
+	    &.about {}
+
+	    &.feature {
+
+	    	.content {
+
+	    		height: 100%;
+
+		    	.features {
+
+		    		width: 100%;
+		    		height: 100%;
+
+		    		display: inline-block;
+
+		    		.or {
+		    			margin: 64px auto;
+		    			
+		    			width: 100%;
+		    			text-align: center;
+		    		}
+
+		    		.buyer, .seller {
+		    			width: 100%;
+		    		}
+		    	}
+	    	}
+	    }
+
+	    &.contact {}
+	}
+}
+
+@media only screen and (max-width: 738px) {
+    .section {
+
+	    &.header, &.about, &.feature, &.contact {
+	    	.content {
+	    		width: 512px;
+	    	}
+	    }
+
+	    &.header {}
+	    &.about {}
+	    &.feature {}
+	    &.contact {}
+	}
+}
+
+@media only screen and (max-width: 512px) {
+    .section {
+
+	    &.header, &.about, &.feature, &.contact {
+	    	.content {
+	    		padding: 0 24px;
+	    		margin: 64px auto;
+
+	    		width: 100%;
+	    	}
+	    }
+
+	    &.header {
+	    	.content {
+		    	.feature-text {
+		    		width: 100% !important;
+
+		    		h1 {
+		    			font-size: 2.4rem;
+		    		}
+
+		    		a {
+		    			width: 300px;
+		    			
+		    			margin: 0 auto;
+		    			margin-top: 36px;
+
+		    			padding: 24px 0;
+
+		    			font-size: 24px;
+
+		    			display: block;
+		    			text-align: center;
+		    		}
+		    	}
+	    	}
+	    }
+
+	    &.about {}
+	    &.contact {}
+	}
+}
+
+@media only screen and (max-width: 414px) {
+    .section {
+
+	    &.header, &.about, &.feature, &.contact {
+	    	.content {
+	    		padding: 0 24px;
+	    		margin: 48px auto;
+	    		
+	    		width: 100%;
+	    		font-size: 16px;
+
+	    		h1 {
+	    			font-size: 2.4rem;
+	    		}
+
+	    		p {
+	    			padding: 12px 0;
+	    			font-size: 16px;
+	    		}
+	    	}
+	    }
+
+	    &.header {
+	    	.content {
+		    	.feature-text {
+
+		    		margin-top: 86px;
+
+		    		h1 {
+		    			font-size: 1.8rem;
+		    		}
+
+		    		a {
+		    			width: 200px;
+
+		    			padding: 18px 0;
+
+		    			margin: 0 auto;
+		    			margin-top: 24px;
+		    			margin-bottom: 48px;
+
+		    			font-size: 18px;
+		    			text-align: center;
+
+		    			display: block;
+		    		}
+		    	}
+	    	}
+	    }
+
+	    &.feature {
+	    	.content {
+		    	.features {
+		    		.or {
+		    			font-size: 36px;
+		    			margin: 36px auto;
+		    		}
+		    	}
+	    	}
+	    }
+
+	    &.about {}
+	    &.contact {}
+	}
+}
+
+
+
+
+

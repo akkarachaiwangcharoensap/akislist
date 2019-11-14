@@ -1,0 +1,69 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+$default-text-color: #4c4c4c;
+
+.section {
+
+	z-index: 0;
+	transition: all 0.6s;
+
+	position: relative;
+
+	&.page {
+	
+		margin-top: 44px;
+		margin-bottom: 44px;
+		
+		padding: 0 48px;
+
+		.content {
+			padding: 24px;
+			margin-top: 24px;
+			
+			border: 2px solid #efefef;
+		}
+
+		.action {
+			top: -12px;
+			right: 64px;
+
+			position: absolute;
+
+			a, form {
+				margin-left: 2px;
+				margin-right: 2px;
+
+				margin-top: 34px;
+
+				float: left;
+				display: inline-block;
+			}
+
+			.created_at, .updated_at {
+
+				float: left;
+				display: inline-block;
+
+				margin-left: 2px;
+				margin-right: 2px;
+
+				p {
+					padding: 6px 12px;
+					margin: 6px 0;
+
+					color: $default-text-color;
+					border: 2px solid $default-text-color;
+					border-radius: 6px;
+
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

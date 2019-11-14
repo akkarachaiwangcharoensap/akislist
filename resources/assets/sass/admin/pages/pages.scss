@@ -1,0 +1,46 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+$default-text-color: #4c4c4c;
+
+.section {
+
+	z-index: 0;
+	transition: all 0.6s;
+
+	&.pages {
+	
+		margin-top: 44px;
+		margin-bottom: 44px;
+		
+		padding: 0 86px;
+
+		.content {
+			
+			margin: 24px 0;
+
+			.page {
+				margin: 12px;
+
+				a {
+					width: 100%;
+
+					padding: 12px 24px;
+					display: block;
+
+					border: 2px solid #528be0;
+					border-radius: 24px;
+					
+					color: #528be0;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

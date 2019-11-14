@@ -1,0 +1,43 @@
+// Google Fonts: Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+	transition: all 0.4s;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+.alert {
+	margin: 0;
+	z-index: 2;
+
+	border-radius: 0;
+
+	p {
+		margin: 0;
+	}
+}
+
+.main-navigation {
+	background: white;
+	border-bottom: 2px solid #d8d8d8;
+
+	.dropdown-menu {
+			
+		padding: 0;
+
+		width: 100%;
+
+		.dropdown-item {
+			padding: 8px 24px;
+		}
+
+		input[type="submit"] {
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

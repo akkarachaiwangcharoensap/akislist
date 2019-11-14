@@ -1,0 +1,115 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+@import '~select2/dist/css/select2.min.css';
+
+$default-text-color: #4c4c4c;
+
+.section {
+
+	z-index: 0;
+	transition: all 0.6s;
+
+	&.new {
+		margin-top: 44px;
+		margin-bottom: 86px;
+
+		padding: 0 86px;
+
+		.content {
+			padding: 32px;
+			padding-bottom: 18px;
+
+			margin-top: 36px;
+
+			border: 2px solid #efefef;
+			border-radius: 6px;
+
+			.title {
+				position: relative;
+				
+				font-size: 24px;
+
+				.button {
+					top: -12px;
+					right: 0;
+
+					font-size: 12px;
+
+					position: absolute;
+				}
+			}
+
+			.description {
+				textarea {
+					display: none;
+				}
+			}
+
+			.title, .category, .upload, .description, .price, .keywords, .location {
+				font-size: 24px;
+				margin-bottom: 32px;
+			}
+
+			.action {
+				min-height: 48px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.section {
+		&.new {
+			padding: 0 64px;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section {
+		&.new {
+			padding: 0 36px;
+		}
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	.section {
+		&.new {
+			margin-top: 64px;
+			padding: 0 12px;
+
+			.content {
+				margin-top: 12px;
+				padding: 32px 18px;
+
+				.enable {
+					small {
+						font-size: 12px;
+					}
+				}
+
+				.sold-to {
+					small {
+						font-size: 12px;
+					}
+				}
+
+				.title, .enable, .category, .description, .price, .keywords, .location {
+					font-size: 18px;
+					margin-bottom: 32px;
+				}
+
+				.action {
+					.button {
+						padding: 8px 24px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
